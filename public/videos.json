@@ -1,0 +1,56 @@
+[
+  {
+    "id": "gd1",
+    "title": "Graphic Design Essentials",
+    "description": "Everything new staff must know about AVOLIRO’s design standards.",
+    "type": "youtube",
+    "category": "Graphic Design",
+    "url": "https://www.youtube.com/watch?v=SnxFkHqN1RA",
+    "uploadedAt": "2025-12-12T09:00:00Z"
+  },
+  {
+    "id": "gd2",
+    "title": "Graphic Design Full Course",
+    "description": "Learn how AVOLIRO designers work efficiently using modern tools.",
+    "type": "youtube",
+    "category": "Graphic Design",
+    "url": "https://www.youtube.com/watch?v=e_dv7GBHka8",
+    "uploadedAt": "2025-12-12T10:00:00Z"
+  },
+  {
+    "id": "wd1",
+    "title": "Web Development Basics",
+    "description": "Understanding frontend development using HTML, CSS, and JS.",
+    "type": "youtube",
+    "category": "Web Development",
+    "url": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
+    "uploadedAt": "2025-12-12T11:00:00Z"
+  },
+  {
+    "id": "wd2",
+    "title": "Deploying Websites Effectively",
+    "description": "Learn how to deploy websites using Vercel and GitHub.",
+    "type": "external",
+    "category": "Web Development",
+    "url": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "uploadedAt": "2025-12-12T12:00:00Z"
+  },
+  {
+    "id": "mk1",
+    "title": "Marketing Fundamentals",
+    "description": "An introduction to strategic marketing at AVOLIRO.",
+    "type": "youtube",
+    "category": "Marketing",
+    "url": "https://www.youtube.com/watch?v=FJfWe3ZJ_jw",
+    "uploadedAt": "2025-12-12T12:30:00Z"
+  },
+  {
+    "id": "mk2",
+    "title": "Social Media Growth Techniques",
+    "description": "Learn how to grow accounts efficiently using proven strategies.",
+    "type": "external",
+    "category": "Marketing",
+    "url": "https://www.w3schools.com/html/movie.mp4",
+    "uploadedAt": "2025-12-12T13:00:00Z"
+  }
+]

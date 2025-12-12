@@ -1,0 +1,115 @@
+/* ---------------------- ACCESSIBILITY GLOBALS ---------------------- */
+
+/* Make focus states highly visible but theme-consistent */
+:focus-visible {
+  outline: 3px solid var(--avoliro-gold) !important;
+  outline-offset: 3px !important;
+  border-radius: 6px;
+}
+
+/* Remove default outline except when using keyboard */
+:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+/* Improve tap target spacing for mobile */
+button, a {
+  min-height: 36px;
+}
+
+/* Improve default link accessibility */
+a {
+  color: var(--avoliro-gold);
+  text-decoration: none;
+}
+a:focus-visible,
+a:hover {
+  color: #ffd680;
+  text-decoration: underline;
+}
+
+/* ---------------------- SCROLL ACCESSIBILITY ---------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Make scrollbars more visible for low-vision users */
+@media (prefers-contrast: more) {
+  ::-webkit-scrollbar-thumb {
+    background: var(--avoliro-gold) !important;
+  }
+}
+
+/* ---------------------- BUTTON ACCESSIBILITY ---------------------- */
+button:focus-visible {
+  outline: 3px solid var(--avoliro-gold) !important;
+  outline-offset: 3px;
+}
+
+.btn-gold:focus-visible {
+  box-shadow: 0 0 0 4px rgba(255, 180, 0, 0.4);
+}
+
+.btn-dark:focus-visible {
+  box-shadow: 0 0 0 4px rgba(255, 180, 0, 0.3);
+}
+
+.btn-outline:focus-visible {
+  box-shadow: 0 0 0 4px rgba(255, 180, 0, 0.4);
+}
+
+/* Increase touch size on mobile */
+@media (max-width: 600px) {
+  button,
+  .btn,
+  .nav-btn {
+    padding: 12px 16px !important;
+    font-size: 15px !important;
+  }
+}
+
+/* ---------------------- SIDEBAR ACCESSIBILITY ---------------------- */
+aside button,
+aside a {
+  position: relative;
+}
+
+aside button:focus-visible,
+aside a:focus-visible {
+  background: rgba(255,180,0,0.18) !important;
+  border-color: var(--avoliro-gold) !important;
+}
+
+/* Improved visibility for collapsed mode */
+aside button:focus-visible {
+  color: var(--avoliro-gold) !important;
+}
+
+/* ---------------------- MOBILE NAV ACCESSIBILITY ---------------------- */
+.mobile-nav button:focus-visible {
+  color: var(--avoliro-gold) !important;
+  background: rgba(255,255,255,0.06) !important;
+  border-radius: 6px;
+}
+
+/* ---------------------- VIDEO PLAYER ACCESSIBILITY ---------------------- */
+video:focus-visible,
+iframe:focus-visible {
+  outline: 3px solid var(--avoliro-gold) !important;
+  outline-offset: 0 !important;
+}
+
+.control-btn:focus-visible {
+  border-color: var(--avoliro-gold) !important;
+  color: var(--avoliro-gold) !important;
+  box-shadow: 0 0 0 4px rgba(255,180,0,0.28);
+}
+
+/* ---------------------- FOR REDUCED MOTION USERS ---------------------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
